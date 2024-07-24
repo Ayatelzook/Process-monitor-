@@ -161,6 +161,7 @@ function Interactive_Mode() {
             Resource_Usage_Alert_pid2=$!
             echo "$Resource_Usage_Alert_pid2"
             kill -TERM $Resource_Usage_Alert_pid2
+            wait $Resource_Usage_Alert_pid2
             exit 0
         ;;
         *)
